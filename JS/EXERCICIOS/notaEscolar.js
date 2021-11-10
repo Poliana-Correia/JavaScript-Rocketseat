@@ -23,6 +23,8 @@ if(nota >= 90) {
     console.log(nome + ' alcançou nota C.')
 }else if(nota >= 60 && nota <= 69) {
     console.log(nome + ' alcançou nota D.')
-}else if(nota < 60) {
+}else if(nota < 60 && nota >= 0) {
     console.log(nome + ' alcançou nota F.')
+}else {
+    console.log('Nota inválida!')
 }
