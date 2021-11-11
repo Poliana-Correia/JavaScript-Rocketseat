@@ -11,20 +11,36 @@ numérico para sistema de notas em caracteres tipo A B C.
 
 */
 
-let nome = 'Poliana Oliveira'
-let nota = 98
 
+function getScore(nota) {
+    let notaA = nota >= 90 && nota <= 100
+    let notaB = nota >= 80 && nota <= 89
+    let notaC = nota >= 70 && nota <= 79
+    let notaD = nota >= 60 && nota <= 69
+    let notaF = nota < 60 && nota >= 0
 
-if(nota >= 90) {
-    console.log(nome + ' alcançou nota A.')
-} else if(nota >= 80 && nota <= 89) {
-    console.log(nome + ' alcançou nota B.')
-}else if(nota >= 70 && nota <= 79) {
-    console.log(nome + ' alcançou nota C.')
-}else if(nota >= 60 && nota <= 69) {
-    console.log(nome + ' alcançou nota D.')
-}else if(nota < 60 && nota >= 0) {
-    console.log(nome + ' alcançou nota F.')
-}else {
-    console.log('Nota inválida!')
+    let notaFinal;
+
+    if (notaA) {
+        notaFinal = "A"
+    } else if (notaB) {
+        notaFinal = "B"
+    } else if (notaC) {
+        notaFinal = "C"
+    } else if (notaD) {
+        notaFinal = "D"
+    } else if (notaF) {
+        notaFinal = "F"
+    } else {
+        notaFinal = 'Nota inválida!'
+    }
+
+        return notaFinal
 }
+
+console.log(getScore(100))
+console.log(getScore(86))
+console.log(getScore(75))
+console.log(getScore(67))
+console.log(getScore(15))
+console.log(getScore(-1))
