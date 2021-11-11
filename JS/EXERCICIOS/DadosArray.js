@@ -69,18 +69,18 @@ function countAuthors() {
 }
 countAuthors()
 
-function booksOfAugustoCury() {
+function booksOfAuthor(author) {
     let books = [];
 
     for(let category of booksByCategory) {
         for(let book of category.books) {
-            if(book.author === 'Augusto Cury') {
+            if(book.author === author) {
                 books.push(book.title)
             }
-            }
         }
+    }
 
-        console.log("Livros do autor: ", books)
+     console.log(`Livros do autor ${author}: ${books.join(", ")}`)
 }
-booksOfAugustoCury()
+booksOfAuthor('jota')
   
