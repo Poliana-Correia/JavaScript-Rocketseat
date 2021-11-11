@@ -5,7 +5,7 @@ seguintes desafios:
 
     * contar o numero de categorias e o numero de livros em cada categoria
     * contar o numero e autores
-    * mostrar llivros do autor Augusto Cury
+    * mostrar livros do autor Augusto Cury
     * transformar a função acima em uma função que irá receber
     o nome do autor e devolver os livros desse autor.
 */
@@ -67,7 +67,6 @@ function countAuthors() {
     }
     console.log("Total de autores: ", authors.length)
 }
-
 countAuthors()
 
 function booksOfAugustoCury() {
@@ -83,6 +82,5 @@ function booksOfAugustoCury() {
 
         console.log("Livros do autor: ", books)
 }
-
 booksOfAugustoCury()
   
